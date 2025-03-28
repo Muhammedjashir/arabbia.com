@@ -148,21 +148,19 @@ const propertyData = [
 ];
 
 const PropertySection = ({ title, ready, offPlan, locations, image, reverse }) => (
-  <div className={`flex flex-col-reverse sm:grid sm:grid-cols-2 items-center px-4 sm:px-6 lg:px-10 ml-5 sm:ml-20 mr-5 sm:mr-20 gap-6`}>
+  <div className={`flex flex-col-reverse sm:flex-row items-center px-4 sm:px-6 lg:px-10 gap-6 sm:gap-10 ${reverse ? "sm:flex-row-reverse " : ""}`}>
     
-    {/* Show image first if reverse is true */}
-    {reverse && (
-      <img src={image} alt={title} className="w-full sm:max-w-[500px] h-[250px] sm:h-auto mx-auto sm:mx-0 shadow-md" />
-    )}
-
+    {/* Image Section */}
+     <img src={image} alt={title} className="w-full max-w-[500px] h-auto mx-auto md:mx-0 shadow-md " />
+    
     {/* Content Section */}
-    <div className="space-y-3 text-center sm:text-left">
+    <div className="space-y-3 text-center sm:text-left  ">
       <h3 className="text-xl sm:text-3xl font-semibold">{title}</h3>
       <p className="text-base sm:text-lg mb-3">
         <span className="text-sky-500 font-semibold">Ready– {ready}</span> | 
         <span className="text-pink-500 font-semibold"> Off Plan– {offPlan}</span>
       </p>
-      <div className="text-sm sm:text-lg space-y-2">
+      <div className="text-sm sm:text-lg space-y-2 ">
         {locations.map((loc, index) => (
           <p key={index}>
             {loc.name}:{" "}
@@ -172,11 +170,6 @@ const PropertySection = ({ title, ready, offPlan, locations, image, reverse }) =
         ))}
       </div>
     </div>
-
-    {/* Show image if reverse is false */}
-    {!reverse && (
-      <img src={image} alt={title} className="w-full sm:max-w-[500px] h-[250px] sm:h-auto mx-auto sm:mx-0 shadow-md"/>
-    )}
   </div>
 );
 
@@ -197,4 +190,5 @@ function FirstPg() {
 }
 
 export default FirstPg;
+
 
