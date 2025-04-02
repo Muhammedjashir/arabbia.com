@@ -4,6 +4,7 @@ import Header from '../Components/Header'
 import Bgimg from '../Pages/Bgimg'
 import FirstPg from '../Pages/FisrtPg'
 import Footer from '../Components/Footer'
+import Properties from '../Pages/Properties'
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
             </>
           }
         />
+        <Route path='/properties'element={<Properties/>}/>
         </Routes>
       
     </div>

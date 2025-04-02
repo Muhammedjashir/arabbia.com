@@ -15,25 +15,30 @@ function Bgimg() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 3 seconds
+    }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, []);
 
   return (
-    <div className="sticky top-0 flex justify-center items-center h-screen w-full overflow-hidden">
-      <AnimatePresence>
-        <motion.img
-          key={currentIndex}
-          src={images[currentIndex]}
-          alt="Background"
-          initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 1.1 }}
-          transition={{ duration: 1 }}
-          className="absolute object-cover w-full h-full"
-        />
-      </AnimatePresence>
+    <div>
+      <div className="font-Ubuntu bg-white text-gray-700 uppercase text-sm sm:text-base md:text-lg font-bold flex items-center justify-center h-[35px] sm:h-[40px] md:h-[45px] px-2 sm:px-4 text-center">
+        <h1>Exclusive portal for Dubai FreeHold Properties</h1>
+      </div>
+      <div className="sticky top-0 flex justify-center items-center h-screen w-full overflow-hidden">
+        <AnimatePresence>
+          <motion.img
+            key={currentIndex}
+            src={images[currentIndex]}
+            alt="Background"
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 1.1 }}
+            transition={{ duration: 1 }}
+            className="absolute object-cover w-full h-full"
+          />
+        </AnimatePresence>
+      </div>
     </div>
   );
 }

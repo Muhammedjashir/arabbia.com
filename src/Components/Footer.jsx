@@ -1,7 +1,9 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
+
 
 const Footer = () => {
+  const Navigate=useNavigate()
   return (
     <div className="bg-gray-700 text-white relative z-10 ">
       {/* Header Section */}
@@ -16,14 +18,14 @@ const Footer = () => {
           FreeHold Properties -{" "}
           <button
             onClick={() => Navigate("/")}
-            className="text-blue-500 font-bold font-Ubuntu cursor-pointer "
+            className="text-blue-500 font-bold font-Bricolage cursor-pointer "
           >
             ara<span className="text-pink-400">bb</span>ia
             <span className="text-gray-700 text-2xl">.com</span>{" "}
           </button>
         </h2>
         <p className="mt-4 text-xl text-gray-500 max-w-223">
-          <span className="font-Ubuntu">arabbia.com</span>connects thousands of
+          <span className="font-Bricolage">arabbia.com</span>connects thousands of
           buyers to Dubai Property Developers, Dubai Real Estate Agencies, and
           Dubai Real Estate Brokers by providing the most accurate, latest, and
           authentic Project & Property listings.
@@ -69,7 +71,7 @@ const Footer = () => {
           {/* Right Section - Social Media Icons */}
           <div className="flex items-center justify-center gap-[1.5rem] text-[17px] font-[300] text-[#d7d7d7] footer_side_part py-4 sm:py-0">
             <img
-              className="h-6 sm:h-7"
+              className="h-6 sm:h-7 "
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png"
               alt="Facebook"
               title="Facebook"
@@ -89,7 +91,7 @@ const Footer = () => {
         All rights reserved 2024{" "}
         <button
           onClick={() => Navigate("/")}
-          className="text-blue-400 font-Ubuntu cursor-pointer"
+          className="text-blue-400 font-Bricolage cursor-pointer"
         >
           @arabbia.com
         </button>
