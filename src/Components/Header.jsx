@@ -72,7 +72,7 @@ function Header() {
             (576)
           </span>
         </button>
-        <button onClick={()=>Navigate('/project')} className="hover:text-blue-600 group">
+        <button onClick={()=>Navigate('/projects')} className="hover:text-blue-600 group">
           Projects{" "}
           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             (576)
