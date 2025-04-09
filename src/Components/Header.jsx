@@ -66,30 +66,30 @@ function Header() {
           menuOpen ? "block" : "hidden"
         }`}
       >
-        <a href="#" className="hover:text-blue-600 group">
+        <button onClick={()=>Navigate("/properties")} className="hover:text-blue-600 group">
           Properties{" "}
           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             (576)
           </span>
-        </a>
-        <a href="#" className="hover:text-blue-600 group">
+        </button>
+        <button onClick={()=>Navigate('/project')} className="hover:text-blue-600 group">
           Projects{" "}
           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             (576)
           </span>
-        </a>
-        <a href="#" className="hover:text-blue-600 group">
+        </button>
+        <button onClick={()=>Navigate('/developers')} className="hover:text-blue-600 group">
           Developers{" "}
           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             (258)
           </span>
-        </a>
-        <a href="#" className="hover:text-blue-600 group">
+        </button>
+        <button onClick={()=>Navigate('/agenciese')} className="hover:text-blue-600 group">
           Agencies{" "}
           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             (1,125)
           </span>
-        </a>
+        </button>
         <a href="#" className="hover:text-blue-600 group">
           Brokers{" "}
           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
