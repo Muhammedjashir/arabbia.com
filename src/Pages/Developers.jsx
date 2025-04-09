@@ -18,7 +18,7 @@ function Developers() {
   return (
     <>
     <Header/>
-      <div className="bg-[#FFFFFF] flex flex-row justify-center items-center pt-[25px] pb-[25px] px-[10px] py-[25px] gap-[2.5rem] property-list-header-bg-container">
+      <div className="bg-[#FFFFFF] h-[70px] flex flex-row justify-center items-center pt-[25px] pb-[25px] px-[10px] py-[25px] gap-[2.5rem] property-list-header-bg-container">
         <div className="text-[24px] font-[400] tracking-[1px] text-[#1E1E1E] text-center align-middle property-list-contact-name">
           Contact Broker - Mr.Rajesh Jain
         </div>
