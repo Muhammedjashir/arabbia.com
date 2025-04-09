@@ -148,7 +148,7 @@ const propertyData = [
 ];
 
 const PropertySection = ({ title, ready, offPlan, locations, image, reverse }) => (
-  <div className={`flex flex-col-reverse sm:flex-row items-center px-4 sm:px-6 lg:px-10 gap-6 sm:gap-10 ${reverse ? "sm:flex-row-reverse " : ""}`}>
+  <div className={` flex flex-col-reverse sm:flex-row items-center px-4 sm:px-6 lg:px-10 gap-6 sm:gap-10 ${reverse ? "sm:flex-row-reverse " : ""}`}>
     
     {/* Image Section */}
      <img src={image} alt={title} className="w-full max-w-[500px] h-auto mx-auto md:mx-0 shadow-md " />

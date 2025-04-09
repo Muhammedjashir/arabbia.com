@@ -10,7 +10,7 @@ function Header() {
     <>
     
       {/* Main Header */}
-      <div className="bg-black text-lg sm:text-xl md:text-3xl font-bold h-[65px] sm:h-[75px] md:h-[100px] flex items-center justify-between px-4 sm:px-6 md:px-12">
+      <div className="bg-black text-lg sm:text-xl md:text-3xl font-bold h-[65px] sm:h-[75px] md:h-[100px] flex items-center justify-between px-4 sm:px-6 md:px-12 ">
         {/* Logo Section */}
         <button onClick={()=>Navigate('/')} className="text-blue-400 font-Bricolage cursor-pointer text-base sm:text-lg md:text-4xl">
           ara<span className="text-pink-400">bb</span>ia
@@ -19,7 +19,7 @@ function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex flex-wrap justify-center items-center gap-6 text-white text-sm md:text-base">
-          <button onClick={()=>Navigate('/properties')} className="hover:text-blue-600 group cursor-pointer">
+          <button onClick={()=>Navigate('/properties')} className="hover:text-blue-600 group cursor-pointer ">
             Properties{" "}
             <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               (576)

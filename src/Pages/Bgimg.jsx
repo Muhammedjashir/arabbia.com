@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function Bgimg() {
   const images = [
+    "https://internationalfireandsafetyjournal.com/wp-content/uploads/2024/01/Dubai-in-the-Desert.jpg",
     "https://res.cloudinary.com/dtljonz0f/image/upload/v1/shutterstock_2414539851_ss_non-editorial_dcx0bm",
     "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
