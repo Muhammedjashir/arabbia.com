@@ -5,6 +5,9 @@ import Bgimg from '../Pages/Bgimg'
 import FirstPg from '../Pages/FisrtPg'
 import Footer from '../Components/Footer'
 import Properties from '../Pages/Properties'
+import Projects from '../Pages/Projects'
+import Agenciese from '../Pages/Agenciese'
+import Developers from '../Pages/Developers'
 
 function Home() {
   return (
@@ -22,6 +25,9 @@ function Home() {
           }
         />
         <Route path='/properties'element={<Properties/>}/>
+        <Route path='/projects' element={<Projects/>}/>
+        <Route path='/agenciese' element={<Agenciese/>}/>
+        <Route path='/developers' element={<Developers/>}/>
         </Routes>
       
     </div>

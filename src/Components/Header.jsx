@@ -8,40 +8,41 @@ function Header() {
 
   return (
     <>
+    
       {/* Main Header */}
       <div className="bg-black text-lg sm:text-xl md:text-3xl font-bold h-[65px] sm:h-[75px] md:h-[100px] flex items-center justify-between px-4 sm:px-6 md:px-12">
         {/* Logo Section */}
         <button onClick={()=>Navigate('/')} className="text-blue-400 font-Bricolage cursor-pointer text-base sm:text-lg md:text-4xl">
           ara<span className="text-pink-400">bb</span>ia
-          <span className="text-gray-700 text-lg sm:text-xl md:text-3xl">.com</span>
+          <span className="text-gray-500 text-lg sm:text-xl md:text-3xl">.com</span>
         </button>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex flex-wrap justify-center items-center gap-6 text-white text-sm md:text-base">
-          <button onClick={()=>Navigate('/properties')} href="#" className="hover:text-blue-600 group cursor-pointer">
+          <button onClick={()=>Navigate('/properties')} className="hover:text-blue-600 group cursor-pointer">
             Properties{" "}
             <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               (576)
             </span>
           </button>
-          <a href="#" className="hover:text-blue-600 group">
-            Projects{" "}
+          <button onClick={()=>Navigate('/projects')} className="hover:text-blue-600 group cursor-pointer">
+            Projects
             <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               (576)
             </span>
-          </a>
-          <a href="#" className="hover:text-blue-600 group">
+          </button>
+          <button onClick={()=>Navigate("/developers")} className="hover:text-blue-600 group cursor-pointer">
             Developers{" "}
             <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               (258)
             </span>
-          </a>
-          <a href="#" className="hover:text-blue-600 group">
+          </button>
+          <button onClick={()=>Navigate('/agenciese')} className="hover:text-blue-600 group cursor-pointer">
             Agencies{" "}
             <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               (1,125)
             </span>
-          </a>
+          </button>
           <a href="#" className="hover:text-blue-600 group">
             Brokers{" "}
             <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
