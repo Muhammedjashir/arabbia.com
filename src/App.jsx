@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-    <div className='font-Open-Sans'>
+    <div className='font-Open-Sans font-light'>
       <BrowserRouter>
       <Home/>
       </BrowserRouter>

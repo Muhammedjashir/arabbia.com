@@ -7,13 +7,13 @@ function Properties() {
 
   return (
     <>
-      <div className="bg-gray-700 min-h-screen">
+      <div className="bg-white min-h-screen">
         <Header />
 
         {/* Top Section with Buttons */}
-        <div className="bg-white h-[70px] flex justify-between items-center px-6 sm:px-12 shadow-md">
+        <div className="bg-gray-700 h-[70px] flex justify-between items-center px-6 sm:px-12 shadow-md">
           {/* Left Button */}
-          <button className="bg-pink-500 text-white px-4 py-2 text-sm sm:text-base md:text-lg font-bold h-[40px]">
+          <button className="bg-pink-500 text-white px-4 py-2 text-sm sm:text-base md:text-lg font-bold h-[40px] cursor-pointer">
             All Areas-List View
           </button>
 
@@ -21,7 +21,7 @@ function Properties() {
           <div className="relative">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="border border-gray-700 px-4 py-2  text-gray-700 cursor-pointer"
+              className="border border-gray-300 px-4 py-2  text-gray-700 cursor-pointer bg-white "
             >
               Property, Area and Bedroom ▼
             </button>
@@ -46,10 +46,10 @@ function Properties() {
             )}
           </div>
         </div>
-        <div className="text-center text-2xl text-white flex justify-center mt-5 ">
+        <div className=" bg-gray-200 text-center text-2xl text-gray-800 flex justify-center py-2 ">
           <h1>Appartments for sale in Dubai Marina-Ready Properties</h1>
         </div>
-        <div className="bg-gray-700 min-h-screen flex flex-col items-center px-4">
+        <div className="bg-white min-h-screen flex flex-col items-center px-4">
           {/* Header Section */}
           <div className="bg-white max-w-7xl w-full shadow-lg p-6 sm:p-12 mt-6">
             <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
@@ -91,7 +91,7 @@ function Properties() {
           </div>
 
           {/* Building List */}
-          <div className="bg-white max-w-7xl w-full  pb-10 my-6 text-center ">
+          <div className="bg-white max-w-7xl w-full  pb-10 my-6 text-center shadow-lg">
             {/* Title */}
             <h3 className="text-xl sm:text-2xl md:text-3xl mb-4 bg-gray-200 p-4 sm:p-6 text-center">
               <span className="text-pink-500 cursor-pointer hover:underline">

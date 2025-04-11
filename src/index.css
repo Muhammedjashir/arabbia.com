@@ -25,9 +25,9 @@
   --bright-pink: #ff5399;
 }
 
-body {
+/* body {
   background-color: var(--secondary-gray);
-}
+} */
 
 .second_card {
   flex-direction: row-reverse;

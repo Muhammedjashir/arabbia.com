@@ -34,7 +34,7 @@ function PropertyCard({
             Listed by {agency}
           </span>
         </div>
-        <div className=" mb-2 text-sm font-semibold mr-0 bg-gray-300">
+        <div className=" mb-2 text-sm font-semibold mr-0 ">
           <span>{building}</span>
         </div>
         <div className="mb-2 text-sm font-semibold mr-40 ">
@@ -219,11 +219,11 @@ function Projects() {
   ];
 
   return (
-    <div className="bg-gray-700 min-h-screen">
+    <div className="bg-white min-h-screen">
       <Header />
 
       {/* Filter Bar */}
-      <div className="bg-white w-full shadow-md px-4 sm:px-6 md:px-12 pb-4 pt-4 overflow-x-auto">
+      <div className="bg-gray-700 w-full shadow-md px-4 sm:px-6 md:px-12 pb-4 pt-4 overflow-x-auto">
         <div className="flex items-center space-x-3 md:space-x-4 min-w-[650px] sm:min-w-full w-max flex-nowrap">
           <span className="text-pink-500 font-semibold whitespace-nowrap shrink-0">
             Filter By
@@ -233,8 +233,8 @@ function Projects() {
               <button
                 onClick={() => toggleDropdown(index)}
                 className={`${
-                  activeDropdown === index ? "bg-blue-400" : "bg-gray-600"
-                } hover:bg-blue-400 hover:text-yellow-300 text-white px-4 py-2 rounded-sm text-sm whitespace-nowrap flex items-center transition-colors`}
+                  activeDropdown === index ? "bg-blue-400" : "bg-white"
+                } text-gray-900 hover:bg-blue-400 hover:text-yellow-300 px-4 py-2 rounded-sm text-sm whitespace-nowrap flex items-center transition-colors`}
               >
                 {filter.label}
                 {selectedFilters[filter.label]
@@ -265,7 +265,7 @@ function Projects() {
           ))}
           <button
             onClick={clearFilters}
-            className="text-sm text-gray-500 hover:underline whitespace-nowrap shrink-0"
+            className="text-sm text-gray-200 hover:underline whitespace-nowrap shrink-0 cursor-pointer"
           >
             Clear Filter
           </button>
@@ -273,7 +273,7 @@ function Projects() {
       </div>
 
       {/* Heading */}
-      <div className="text-center text-2xl text-white flex justify-center mt-5">
+      <div className="text-center text-2xl text-gray-800 flex justify-center bg-gray-300 py-2">
         <h1>Apartments for sale in Dubai Marina - Ready Properties (524)</h1>
       </div>
 

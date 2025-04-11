@@ -70,14 +70,14 @@ const Agenciese = () => {
 
   return (
     <>
-      <div className="bg-gray-700 min-h-screen">
+      <div className="bg-white min-h-screen">
         <Header />
 
         {/* Top Section with Buttons */}
         <div className="max-w-full mx-auto bg-white ">
-          <div className="flex justify-end ">
-            <div className="flex space-x-2  mr-10 rounded-xl mt-5 mb-5">
-              <h2 className="text-xl font-semibold text-gray-800 ">Sort By</h2>
+          <div className="flex justify-end bg-gray-700">
+            <div className="flex space-x-2  mr-10 rounded-xl mt-5 mb-5 ">
+              <h2 className="text-xl font-semibold text-gray-200 ">Sort By</h2>
               <button
                 onClick={() => setSortType("az")}
                 className="bg-pink-500 text-white px-4 py-1 rounded cursor-pointer"
@@ -93,8 +93,8 @@ const Agenciese = () => {
             </div>
           </div>
           
-          <div className="bg-gray-700 min-h-screen flex flex-col items-center ">
-          <div className="text-center text-2xl text-white flex justify-center mt-5 ">
+          <div className=" min-h-screen flex flex-col items-center ">
+          <div className="text-center text-2xl text-gray-800 flex justify-center bg-gray-300 w-full py-2">
             <h1>Appartments for sale in Dubai Marina-Ready Properties</h1>
           </div>
             {/* Header Section */}

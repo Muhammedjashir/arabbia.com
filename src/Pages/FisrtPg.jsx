@@ -148,44 +148,78 @@ const propertyData = [
 ];
 
 const PropertySection = ({ title, ready, offPlan, locations, image, reverse }) => (
-  <div className={` flex flex-col-reverse sm:flex-row items-center px-4 sm:px-6 lg:px-10 gap-6 sm:gap-10 ${reverse ? "sm:flex-row-reverse " : ""}`}>
-    
-    {/* Image Section */}
-     <img src={image} alt={title} className="w-full max-w-[500px] h-auto mx-auto md:mx-0 shadow-md " />
-    
-    {/* Content Section */}
-    <div className="space-y-3 text-center sm:text-left  ">
-      <h3 className="text-xl sm:text-3xl font-semibold">{title}</h3>
-      <p className="text-base sm:text-lg mb-3">
-        <span className="text-sky-500 font-semibold">Ready– {ready}</span> | 
-        <span className="text-pink-500 font-semibold"> Off Plan– {offPlan}</span>
-      </p>
-      <div className="text-sm sm:text-lg space-y-2 ">
-        {locations.map((loc, index) => (
-          <p key={index}>
-            {loc.name}:{" "}
-            <span className="text-black">Ready–{loc.ready}</span> | 
-            <span className="text-black"> Off Plan–{loc.offPlan}</span>
-          </p>
-        ))}
-      </div>
+
+  
+<div
+  className={`flex flex-col-reverse sm:flex-row ${
+    reverse ? "sm:flex-row-reverse sm:items-start" : "sm:items-start"
+  } items-center px-4 sm:px-6 lg:px-10 gap-6 sm:gap-10`}
+>
+  {/* Image Section */}
+  <div className={`w-full sm:w-1/2 flex justify-center ${reverse ? "sm:justify-start" : "sm:justify-end"}`}>
+    <img
+      src={image}
+      alt={title}
+      className="w-full max-w-[400px] h-[250px] object-cover shadow-md"
+    />
+  </div>
+
+  {/* Content Section */}
+  <div
+    className={`w-full sm:w-1/2 space-y-4 flex flex-col ${
+      reverse
+        ? "sm:text-right text-center sm:items-end"
+        : "sm:text-left text-center sm:items-start"
+    }`}
+  >
+    <h3 className="text-xl sm:text-3xl font-semibold max-w-[350px]">
+      {title}
+    </h3>
+
+    <p className="text-base sm:text-lg mb-2">
+      <span className="text-sky-500 font-semibold">Ready– {ready}</span>
+      {offPlan && (
+        <>
+          {" "}
+          | <span className="text-pink-500 font-semibold">Off Plan– {offPlan}</span>
+        </>
+      )}
+    </p>
+
+    <div className="text-sm sm:text-base space-y-2 w-full">
+      {locations.map((loc, index) => (
+        <p key={index}>
+          {loc.name}: <span className="text-black">Ready–{loc.ready}</span>
+          {loc.offPlan && (
+            <>
+              {" "}
+              | <span className="text-black">Off Plan–{loc.offPlan}</span>
+            </>
+          )}
+        </p>
+      ))}
     </div>
   </div>
+</div>
+
+
 );
 
 function FirstPg() {
   return (
-    <div className="bg-gray-700 text-white py-8 px-4 font-sans relative">
-      <h2 className="text-center text-xl sm:text-3xl font-semibold mb-6">
-        FreeHold Properties For Sale in Dubai
-      </h2>
+    <>
+    <div className="bg-white text-black py-8 px-4 font-sans relative ">
+     
 
       <div className="bg-white text-black max-w-7xl mx-auto p-4 sm:p-8 space-y-12">
         {propertyData.map((property, index) => (
           <PropertySection key={index} {...property} reverse={index % 2 !== 0} />
         ))}
       </div>
+      
     </div>
+    
+    </>
   );
 }
 

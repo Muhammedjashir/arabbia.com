@@ -10,16 +10,16 @@ import car_dark_icon from "../assets/icons/car-dark-icon.svg";
 import bed_dark_icon from "../assets/icons/bed-dark-icon.svg";
 import balcony_dark_icon from "../assets/icons/balcony-dark-icon.svg";
 import broker from "../assets/images/broker.png";
-import arrow_group from "../assets/icons/arrow-group.svg"
+import arrow_group from "../assets/icons/arrow-group.svg";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 
 function Developers() {
   return (
     <>
-    <Header/>
-      <div className="bg-[#FFFFFF] h-[70px] flex flex-row justify-center items-center pt-[25px] pb-[25px] px-[10px] py-[25px] gap-[2.5rem] property-list-header-bg-container">
-        <div className="text-[24px] font-[400] tracking-[1px] text-[#1E1E1E] text-center align-middle property-list-contact-name">
+      <Header />
+      <div className="bg-gray-700 h-[70px] flex flex-row justify-center items-center pt-[25px] pb-[25px] px-[10px] py-[25px] gap-[2.5rem] property-list-header-bg-container">
+        <div className="text-[24px] font-[400] tracking-[1px] text-gray-200 text-center align-middle property-list-contact-name">
           Contact Broker - Mr.Rajesh Jain
         </div>
         <div className="flex gap-[14px] property-list-buttons ">
@@ -34,17 +34,19 @@ function Developers() {
           </div>
         </div>
       </div>
-
-      <section className="w-full h-auto flex flex-col items-center justify-start px-[3%] property-listing ">
-        <h1 className="text-[24px] font-[300] tracking-[0.5px] text-center text-[var(--primary-white)] my-[1.5rem] property_list_heading">
+      <div>
+        <h1 className=" bg-gray-300 w-full py-2 text-[24px] font-[300] tracking-[0.5px] text-center text-gray-800  property_list_heading">
           Property Listing No:15986 | 2 Bedroom Apartment for Sale in Signature
           Residence, Dubai Marina
         </h1>
+      </div>
+
+      <section className="w-full h-auto flex flex-col items-center justify-start px-[3%] property-listing ">
         <div className="w-full bg-[var(--primary-white)] flex flex-col items-center justify-start gap-[3.5rem] py-[2rem] px-[2%] property_list_container">
-          <h1 className="text-[22px] font-[300] tracking-[0.5px] text-[#1e1e1e] text-center property_sub_list_heading">
+          {/* <h1 className="text-[22px] font-[300] tracking-[0.5px] text-[#1e1e1e] text-center property_sub_list_heading">
             Property Listing No:15986 | 2 Bedroom Apartment for Sale in
             Signature Residence, Dubai Marina
-          </h1>
+          </h1> */}
 
           <div className="flex justify-between property_list_card">
             <div className="flex flex-col items-start justify-start gap-[1.5px] property_list_images">
@@ -406,11 +408,10 @@ function Developers() {
 
       <div className="w-full px-[5%] py-[1.5rem] grid place-items-center property_list_bottom_button_container">
         <button className="bg-[#0b66ef] border border-white flex items-center justify-center gap-[0.5rem] cursor-pointer text-[16px] font-400 text-center text-[var(--primary-white)] shadow-[1px_1px_7px_0px_#00000033] px-10 py-2 property_list_bottom_button_container_button">
-          <img src={arrow_group} alt="" /> Back to multiple
-          listing page
+          <img src={arrow_group} alt="" /> Back to multiple listing page
         </button>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

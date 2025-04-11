@@ -8,6 +8,7 @@ import Properties from '../Pages/Properties'
 import Projects from '../Pages/Projects'
 import Agenciese from '../Pages/Agenciese'
 import Developers from '../Pages/Developers'
+import Header1 from '../Components/Header1'
 
 function Home() {
   return (
@@ -17,7 +18,8 @@ function Home() {
           path="/"
           element={
             <>
-              <Header />
+            <Header1/>
+              {/* <Header /> */}
               <Bgimg />
               <FirstPg />
               <Footer />
