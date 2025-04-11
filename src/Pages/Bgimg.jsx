@@ -27,7 +27,7 @@ function Bgimg() {
       {/* <div className="font-Ubuntu bg-white text-gray-700 uppercase text-sm sm:text-base md:text-lg font-bold flex items-center justify-center h-[35px] sm:h-[40px] md:h-[45px] px-2 sm:px-4 text-center">
         <h1>Exclusive portal for Dubai FreeHold Properties</h1>
       </div> */}
-      <div className="flex justify-center items-center h-[300px] w-full overflow-hidden object-cover ">
+      <div className="flex justify-center items-center h-[300px] w-full object-cover ">
         <AnimatePresence>
           <motion.img
             key={currentIndex}
@@ -37,7 +37,7 @@ function Bgimg() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.1 }}
             transition={{ duration: 1 }}
-            className="absolute  w-full h-full"
+            className="  w-full h-full"
           />
         </AnimatePresence>
       </div>
