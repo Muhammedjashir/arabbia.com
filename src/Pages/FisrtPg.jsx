@@ -208,7 +208,7 @@ const PropertySection = ({ title, ready, offPlan, locations, image, reverse }) =
 function FirstPg() {
   return (
     <>
-    <div className="bg-white text-black py-8 px-4 font-sans relative ">
+    <div className="bg-white text-black py-8 px-4 font-sans relative z-10 ">
      
 
       <div className="bg-white text-black max-w-7xl mx-auto p-4 sm:p-8 space-y-12">

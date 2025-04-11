@@ -44,7 +44,7 @@ function Bgimg() {
      
     </div>
     <div>
-    <h2 className="bg-gray-200 text-center text-xl sm:text-2xl  py-2 relative">
+    <h2 className="bg-gray-200 text-center text-xl sm:text-2xl  py-2 relative z-10">
         FreeHold Properties For Sale in Dubai
       </h2>
     </div>

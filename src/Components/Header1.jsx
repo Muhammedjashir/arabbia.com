@@ -16,13 +16,13 @@ function Header1() {
 
         
         <div className="">
-        <button onClick={()=>Navigate('/')} className="text-blue-400 font-Bricolage cursor-pointer text-base sm:text-lg md:text-4xl mt-5">
+        <button onClick={()=>Navigate('/')} className="text-blue-400 font-Bricolage cursor-pointer text-base sm:text-lg md:text-4xl mt-2">
           ara<span className="text-pink-400">bb</span>ia
           <span className="text-gray-500 text-lg sm:text-xl md:text-3xl">.com</span>
         </button>
         </div>
         
-        <h1 className=" font-light font-Ubuntu text-gray-500 uppercase text-sm sm:text-base md:text-sm flex items-center justify-center h-[35px] sm:h-[40px] md:h-[45px] px-2 sm:px-4 text-center">Exclusive portal for Dubai FreeHold Properties</h1>
+        <h1 className=" font-light text-gray-500 uppercase text-sm sm:text-base md:text-sm flex items-center justify-center h-[35px] sm:h-[40px] md:h-[45px] px-2 sm:px-4 text-center">Exclusive portal for Dubai FreeHold Properties</h1>
 
        
         </div>
