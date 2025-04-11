@@ -211,7 +211,7 @@ function FirstPg() {
     <div className="bg-white text-black py-8 px-4 font-sans relative z-10 ">
      
 
-      <div className="bg-white text-black max-w-7xl mx-auto p-4 sm:p-8 space-y-12">
+      <div className="bg-white text-black max-w-7xl mx-auto p-4 sm:p-8 space-y-12 relative z-10">
         {propertyData.map((property, index) => (
           <PropertySection key={index} {...property} reverse={index % 2 !== 0} />
         ))}
